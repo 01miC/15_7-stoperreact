@@ -1,0 +1,57 @@
+
+@font-face {
+    font-family: 'Munro';
+    src: url('fonts/Munro.eot');
+    src: url('fonts/Munro.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Munro.woff2') format('woff2'),
+        url('fonts/Munro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family:'Munro';
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+canvas {
+    display: block;
+}
+
+.watch-container {
+    position:absolute;
+    width:300px;
+    height:200px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color:black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.watch-container > div {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button,.stopwatch,.results {
+    color:#0F0;
+    font-size:24px;
+}
+
+.button {
+    text-decoration: none;
+    margin:0 5px;
+}
+.button:hover {
+    color:#fff;
+}
